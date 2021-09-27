@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>STP</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway&display=swap" rel="stylesheet">  
+    </head>
+    <body class="changeColor">
+       
+       
+        <!--start header-->
+        <header>
+            
+            <!--start nav-->
+            <!--<nav class="nav">
+                <div class= "logo">S T P</div>-->
+
+               <!-- <div class="navBar">
+                    <ul>
+                        <li> <a href="#about"> About </a></li>
+                        <li> <a href="#contact"> Contact </a></li>
+                    </ul>
+                </div>-->
+            </nav>
+            <!--end nav-->
+
+
+            <!--start about -->
+            <div  id="about" class="about">
+                <div class="avatar">
+                    <img src="avatar-modified.png" alt="STP"><br>
+                    <h1>WELCOME TO STP ORGANIZATION</h1><br>
+                    <p>We are students, Leading +ve changes in our community!</p>
+                </div> <br>
+               
+                
+                <div class="aboutus">
+                    <div class="text1 box" >
+                      <h1>
+                        About Us
+                      </h1>
+                      <p>
+                        STP was founded in 2006 at Cairo university; The purpose of STP is to strengthen the leadership, skills, effectiveness and efficiency of involved people; enabling them to further enrich the quality of the community and their personal life.
+                      </p>
+                    </div> <br> 
+                    <div class="text2 box">
+                        <h2>OBJECTIVE</h2>
+                        <ul>
+                            <li>Reducing the gap between work sector & academic studies.</li>
+                            <li>Promoting the idea of development among youth.</li>
+                            <li>Contributing in the development & the awakening of the community.</li>
+                            <li>Convencing & supporting a dynamic learning community.</li>
+                        </ul>   
+                    </div><br>
+                    <div class="text3 box" >
+                        <h2>VISION</h2>
+                        <p>
+                            To be a Leading organization working on developing youth who will lead positive changes.
+                        </p>
+                    </div><br>
+                    <div class="text4 box">
+                        <h2>MISSION</h2>
+                        <p>
+                            To develop youth in various fields personally and technically through academic programs, projects, and events in a values oriented system, to take our part in providing a generation capable of playing its roles effictively towards itself, community and country.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <!--end about-->
+
+        </header>
+        <!--end header-->
+        
+      <div class="containerr">
+        <!--start form-->
+        <div class="divform">
+            
+           <h1>Change text color!</h1> <br>
+           <input id="text-color" type="text"  placeholder ="color"><Br>
+           <input type="button" id="colorButton" value="change" onclick="changeColor()">
+           
+        </div>
+        <!--end form-->
+       <div id="countdown">
+           <h1>Countdown</h1><br>
+           <input id="startDate" type="datetime-local" placeholder="starting date"><br>
+           <input id="endDate" type="datetime-local" placeholder="Ending date"><br>
+           <input id="start-count" type="button" value="Start count" onclick="myLoop()" >
+
+       </div>
+       </div>
+       <div id="clock">
+           <div id="days" class="timercards"></div>
+           <div id="hours" class="timercards"></div>
+           <div id="minutes" class="timercards"></div>
+           <div id="seconds" class="timercards"></div>
+       </div>    
+
+       
+       
+       
+        <!--start footer-->
+        <footer>
+            <div id="footer">
+               <span>STP</span> 
+            </div>
+            
+            
+            
+            <script src="js/script.js"></script>
+        </footer>
+        <!--end footer-->
+
+        
+
+    </body>
+</html>
