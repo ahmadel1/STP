@@ -7,26 +7,16 @@ function changeColor(){
 // countdown function 
 function myLoop() {
       
-
-  let now = new Date (document.getElementById("startDate").value)
-  let end = new Date (document.getElementById ("endDate").value);
-  let difference = end.getTime() - now.getTime();
-  let a = document.getElementById("days");
-  let b = document.getElementById("hours");
-  let c = document.getElementById("minutes");
-  let d = document.getElementById("seconds");
-
- 
-  function waitforme(milisec) {
-     return new Promise(resolve => {
-        setTimeout(() => { resolve('') }, milisec);
-     })
-  }
-
+   let now = new Date (document.getElementById("startDate").value)
+   let end = new Date (document.getElementById ("endDate").value);
+   let difference = end.getTime() - now.getTime();
+   let a = document.getElementById("days");
+   let b = document.getElementById("hours");
+   let c = document.getElementById("minutes");
+   let d = document.getElementById("seconds");
   
-  async function printy() {
-     for(var i = difference; i > 0 ; i= i-1000) {
-        await waitforme(1000);
+   function intervals (){
+      var red = setInterval(function blue (){
         difference = difference-1000
         let seconds = Math.floor( (difference/1000) % 60 );
         let minutes = Math.floor( (difference/1000/60) % 60 );
@@ -36,16 +26,15 @@ function myLoop() {
         b.innerHTML = 'HOURS '+ "<br>" + hours  ;
         c.innerHTML = 'MINUTES ' + "<br>" + minutes;   
         d.innerHTML = 'SECONDS ' + "<br>" + seconds;
-        
-     }
-     a.innerHTML = "";
-     b.innerHTML = "";
-     c.innerHTML = "";
-     d.innerHTML = "";
-     
-  }
-  printy()
+        if (difference < 1)
+         clearInterval(red);
+         return;
+ }, 1000)}
+
+ intervals()
+
 }
+
 
 
 
