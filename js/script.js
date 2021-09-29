@@ -7,6 +7,7 @@ function changeColor(){
 // countdown function 
 function myLoop() {
       
+
    let now = new Date (document.getElementById("startDate").value)
    let end = new Date (document.getElementById ("endDate").value);
    let difference = end.getTime() - now.getTime();
@@ -14,7 +15,9 @@ function myLoop() {
    let b = document.getElementById("hours");
    let c = document.getElementById("minutes");
    let d = document.getElementById("seconds");
+ 
   
+ 
    function intervals (){
       var red = setInterval(function blue (){
         difference = difference-1000
@@ -26,17 +29,17 @@ function myLoop() {
         b.innerHTML = 'HOURS '+ "<br>" + hours  ;
         c.innerHTML = 'MINUTES ' + "<br>" + minutes;   
         d.innerHTML = 'SECONDS ' + "<br>" + seconds;
-        if (difference < 1)
+
+        if (difference < 1){
          clearInterval(red);
-         return;
- }, 1000)}
+           a.innerHTML = '' ;
+           b.innerHTML = '';
+           c.innerHTML = '';
+           d.innerHTML = '';}
+      }, 1000)}
 
- intervals()
-
+  intervals()  
 }
-
-
-
 
 
 
