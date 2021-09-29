@@ -2,9 +2,7 @@ html {
     background-color: #F9F7F3;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     scroll-behavior: smooth;
-    font-family: 'Raleway', sans-serif;
-    /*font-family: 'Bebas Neue', cursive;*/
-    
+    font-family: 'Raleway', sans-serif;    
 }
 
 *{
@@ -18,14 +16,6 @@ html {
     height:750px;
 }
 
-.nav{
-    width:100%;
-    height: 70px;
-    display: flex;
-    background-color: white;
-
-}
-
 .logo{
     width:50%;
     height: 100%;
@@ -35,18 +25,11 @@ html {
     font-family: 'Bebas Neue', cursive;
 }
 
-.navBar{
-    width: 50%;
-    height: 100%;
-}
-
 .about{
     background-color:#F9F7F3 ;
     width: 100%;
     height: 700px;
     display: flex;
-    
-
 }
 
 .avatar {
@@ -59,9 +42,6 @@ html {
     align-items: center;
     justify-content: center;
     padding-bottom: 100px;
-
-    
-
 }
 
 .avatar img {
@@ -98,7 +78,7 @@ html {
 
 }
 .box :hover {
-    color: rgb(80, 63, 63);
+    color: rgb(75, 75, 75);
     transition: 0.3s color;
 
 }
@@ -114,9 +94,6 @@ html {
     border-radius: 30px;
 }
 
-
-
-
 #colorButton{
     text-align: center;
     height: 30px;
@@ -125,10 +102,7 @@ html {
     border-radius: 5px;
     font-size: 15px;
     cursor: pointer;
-
-
 }
-
 
 #countdown {
     width: 50%;
@@ -152,45 +126,17 @@ html {
     border-radius: 30px;
 
 }
-#days{
-    width: 20%;
-    height: 40%;
-    background-color: white;
-    text-align: center;
-    padding-top: 40px;
 
-}
-#hours{
-    width: 20%;
-    height: 40%;
-    background-color: white;
-    text-align: center;
-    padding-top: 40px;
-
-}
-#minutes{
-    width: 20%;
-    height: 40%;
-    background-color: white;
-    text-align: center;
-    padding-top: 40px;
-
-}
-#seconds{
-    width: 20%;
-    height: 40%;
-    background-color: white;
-    text-align: center;
-    padding-top: 40px;
-
-}
 .timercards{
     border:solid darkgray 0.5px;
     border-radius: 10px;
-    /*background-color: cyan;*/
     box-shadow: darkgray 5px 10px 10px ;
+    width: 20%;
+    height: 40%;
+    background-color: white;
+    text-align: center;
+    padding-top: 40px;
 }
-
 
 #text-color{
     height: 30px;
@@ -205,7 +151,7 @@ html {
     display: flex;
 }
 
-#endDate {
+.userInput{
     height: 30px;
     width: 200px;
     border: none;
@@ -215,17 +161,6 @@ html {
     cursor: pointer;
 
 }
-#startDate{
-    height: 30px;
-    width: 200px;
-    border: none;
-    font-size: 12px;
-    border-bottom: 2px solid silver;
-    border-radius: 10px;
-    cursor: pointer;
-
-}
-
 
 #start-count {
     border-bottom: 2px solid silver;
